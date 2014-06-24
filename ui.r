@@ -48,6 +48,7 @@ shinyUI(fluidPage(
       tabPanel("Documentation",
                p("This application estimates the total amount of cost escalation for a construction project (in M€), based on historical data maintained by some company in that field, using as parameters a) the length of time to complete the project and b) the original budgeted amount.",
                  "The user can also select the desired level of confidence for the prediction interval of the response (between the values 80%, 90% or 95%).",
+                 a("The server.r and ui.r code can be hound here.", href="https://github.com/gd047/shinyapp_pr_cost_esc", target="_blank"),
                  br(),br(),
                  "For the calculation of the predictions a", strong("segmented single linar regression"), "model is used, where the point of slope change is estimated automatically.",
                  "The application was implemented in", a("R,", href="http://www.r-project.org/", target="_blank"),'using the',
